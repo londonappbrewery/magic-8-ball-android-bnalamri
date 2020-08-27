@@ -1,13 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/activity_main"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="#26ade0"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:paddingRight="16dp"
     android:paddingBottom="16dp"
     tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="88dp"
+        android:background="#0C0101"
+        android:gravity="center"
+        tools:ignore="RtlCompat">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/title_text"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="171dp"
+        tools:ignore="RtlCompat">
+
+        <ImageView
+            android:id="@+id/image_eightBall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="false"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:contentDescription="@string/button_name"
+            app:srcCompat="@drawable/ball1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="396dp"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="45dp">
+
+        <Button
+            android:id="@+id/askButton"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="124dp"
+            android:layout_height="65dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="103dp"
+            android:layout_marginRight="195dp"
+            android:layout_marginBottom="75dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/button_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/background_light" />
+
+    </RelativeLayout>
+
 </RelativeLayout>
